@@ -1,0 +1,84 @@
+/*navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f78f8f;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.navigation{
+  margin: 10px;
+}
+/*body*/
+body{
+  background-color: pink;
+}
+/*right div*/
+
+.right{
+  position: absolute;
+  float: right;
+  right: 12px;
+  padding: 0px 16px;
+  background-color: black;
+  color: white
+}
+footer{
+  padding: 3.5em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+/*images*/
+* {
+  box-sizing: border-box;
+}
+.content{
+  flex-wrap: nowrap;
+}
+.pic > img{
+  padding-top: 3.2em;
+}
+.pic {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.content > .pic > .first{
+  padding-top: 3.2em;
+}
+.content > .pic > .two{
+  padding-top: 3.2em;
+  padding-bottom: 0;
+}
+.content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*div hovers*/
+ div:hover li{
+display: block;
+}
